@@ -136,12 +136,7 @@ gulp.task("vendor", function () {
   gulp.src([
       "source/js/libs/jquery-3.3.1.js",
       "source/js/libs/picturefill.min.js",
-      "source/js/libs/svg4everybody.min.js",
-      "source/js/libs/jquery.viewportchecker.min.js",
-      "source/js/libs/slick.min.js",
-      "source/js/libs/jquery.onepage-scroll.js",
-      "source/js/libs/jquery.onepage-scroll.min.js",
-      "source/js/libs/jquery.magnific-popup.min.js",
+      "source/js/libs/svg4everybody.min.js"
     ])
     .pipe(concat("vendor.min.js"))
     .pipe(gulp.dest("build/js"));
@@ -182,10 +177,8 @@ gulp.task("build", function (done) {
     "clean",
     "copy",
     "images",
-    "video",
     "style",
     "sprite",
-    "sprite-png",
     "html",
     "vendor",
     "jsmin",

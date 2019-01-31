@@ -38,7 +38,7 @@
           <div class="navigation__wrapper">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a class="navigation__link" href="#">о конкурсе</a>
+                <a class="navigation__link js-promo" href="#">о конкурсе</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link js-organizers" href="#organizers">организаторы</a>
@@ -54,7 +54,7 @@
         </nav>
       </div>
     </header>
-    <section class="promo">
+    <section id="promo" class="promo">
       <canvas id="nokey">
         Your Browser Don't Support Canvas, Please Download Chrome ^_^``
       </canvas>
@@ -63,7 +63,7 @@
           проекты</h1>
         <p class="promo__text">Российская инжиниринговая компания «ЕвроМобайл» ищет проекты для реализации в решениях
           Smart City</p>
-        <a href="#popup-order" class="button-order popup-btn">Отправить заявку</a>
+        <button class="button button-order popup-btn">Отправить заявку</button>
       </div>
     </section>
     <section id="organizers" class="organizers">
@@ -72,7 +72,7 @@
           <div class="box__info">
             <h2 class="title box__title">Организаторы</h2>
             <div class="box__caption">Эксперт конкурса:</div>
-            <a href="#">
+            <a href="#" target="_blank">
               <img src="img/iot-logo-dark.svg" alt="логотип компании">
             </a>
             <h4 class="box__title-h4">Российская инжиниринговая компания «ЕвроМобайл»</h4>
@@ -86,9 +86,9 @@
               телекоммуникации, энергетика и ТЭК. ЕвроМобайл создаёт решения для беспроводной связи на базе как
               современных технологий: NB-IoT, LoRa, RFID, NFC, так и уже хорошо всем известных: LTE, 3G, Wi-Fi,
               ГЛОНАСС.</p>
-            <a class="box__link" href="#">Перейти на сайт</a>
+            <a class="box__link" href="#" target="_blank">Перейти на сайт</a>
             <div class="box__caption">Официальный провайдер платформы:</div>
-            <a href="#">
+            <a href="#" target="_blank">
               <img src="img/euromob-logo-dark.svg" alt="логотип компании">
             </a>
             <h4 class="box__title-h4">Медиаресурс iot.ru</h4>
@@ -97,12 +97,10 @@
               Big Data, Cloud computing, AR, VR и другим важнейшим высоким технологиям нашего времени. IoT.ru регулярно
               публикует новости, авторские статьи, аналитические отчёты, видеоинтервью с представителями бизнеса и
               государства, видеообзоры самых важных профильных мероприятий.</p>
-            <a class="box__link" href="#">Перейти на сайт</a>
+            <a class="box__link" href="#" target="_blank">Перейти на сайт</a>
           </div>
         </div>
-        <div class="box__item box__item--pic-one">
-
-        </div>
+        <div class="box__item box__item--pic-one"></div>
       </div>
     </section>
     <section id="advantages" class="advantages">
@@ -154,10 +152,10 @@
     <section id="conditions" class="conditions">
       <div class="box">
         <div class="box__item box__item--pic-two">
-          <a class="logo logo--iot" href="#">
+          <a class="logo logo--iot" href="#" target="_blank">
             <img src="img/iot-logo.svg" alt="логотип провайдера">
           </a>
-          <a class="logo logo--euro" href="#">
+          <a class="logo logo--euro" href="#" target="_blank">
             <img src="img/euromob-logo.svg" alt="логотип компании">
           </a>
         </div>
@@ -188,45 +186,49 @@
                 <span class="list-numb__text">Заявка подана вовремя в указанные сроки: с 12 февраля по 14 апреля</span>
               </li>
             </ul>
-            <a href="#popup-order" class="button-order popup-btn">Отправить заявку</a>
+            <button class="button button-order popup-btn">Отправить заявку</button>
           </div>
+          <div class="copyright">Сделано в <a href="https://its.agency/" target="_blank">its.agency</a></div>
         </div>
       </div>
     </section>
-  </div>
-  <div id="popup-order" class="popup popup-order white-popup-block mfp-hide">
-    <button class="button popup-modal-dismiss" aria-label="Закрыть окно"></button>
-    <div class="popup-order__wrapper">
-      <h3 class="popup-order__title title">Заявка</h3>
-      <form action="" class="popup-order__form">
-        <ul class="popup-order__list">
-          <li class="popup-order__item">
-            <label class="visually-hidden" for="name">ФИО</label>
-            <input class="popup-order__input" id="name" type="text" name="name" placeholder="ФИО*">
-          </li>
-          <li class="popup-order__item">
-            <label class="visually-hidden" for="phone">Контактный телефон*</label>
-            <input class="popup-order__input" id="phone" name="phone" type="tel" placeholder="Контактный телефон*">
-          </li>
-          <li class="popup-order__item">
-            <label class="visually-hidden" for="email">E-mail</label>
-            <input class="popup-order__input" id="email" name="email" type="email" placeholder="E-mail*">
-          </li>
-          <li class="popup-order__item">
-            <label class="visually-hidden" for="message">Комментарий</label>
-            <textarea class="popup-order__textarea" name="message" id="message" cols="30" rows="10" placeholder="Комментарий"></textarea>
-          </li>
-          <li class="popup-order__item">
-            <div class="popup-order__file">
-              <span class="popup-order__file--text">Прикрепить файл (jpg, pdf, excel, word, zip, rar)</span>
-              <label class="visually-hidden" for="file">Прикрепить файл (jpg, pdf, excel, word, zip, rar)</label>
-              <input class="popup-order__input popup-order__input--file" id="file" type="file" placeholder="Прикрепить файл (jpg, pdf, excel, word, zip, rar)">
+    <div class="popup-overlay">
+      <section class="popup popup-order">
+        <button class="button popup-close" aria-label="Закрыть окно"></button>
+        <div class="popup-order__wrapper">
+          <h3 class="popup-order__title title">Заявка</h3>
+          <form class="popup-order__form" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="popup-order__list">
+              <li class="popup-order__item">
+                <label class="visually-hidden" for="name">ФИО</label>
+                <input class="popup-order__input" id="name" type="text" name="name" placeholder="ФИО*" required>
+              </li>
+              <li class="popup-order__item">
+                <label class="visually-hidden" for="phone">Контактный телефон*</label>
+                <input class="popup-order__input" id="phone" name="phone" type="tel" placeholder="Контактный телефон*" required>
+              </li>
+              <li class="popup-order__item">
+                <label class="visually-hidden" for="email">E-mail</label>
+                <input class="popup-order__input" id="email" name="email" type="email" placeholder="E-mail*" required>
+              </li>
+              <li class="popup-order__item">
+                <label class="visually-hidden" for="message">Комментарий</label>
+                <textarea class="popup-order__textarea" name="message" id="message" cols="30" rows="10" placeholder="Комментарий"></textarea>
+              </li>
+              <li class="popup-order__item">
+                <label for="myfile" class="popup-order__chous">Прикрепить файл (jpg, pdf, excel, word, zip, rar)</label>
+                <input type="file" class="popup-order__input popup-order__input--file" id="myfile" name="myfile" multiple="multiple" />
+              </li>
+            </ul>
+            <div class="popup-order__bottom">
+              <p class="policy-text">Отправляя заявку, я подтверждаю,что ознакомлен и согласен с <a href="#">Политикой
+                  конфиденциальности</a> данного сайта</p>
+              <button class="button button-order popup-order__button" type="submit">Отправить заявку</button>
             </div>
-          </li>
-        </ul>
-        <button class="button button-order popup-order__button" type="submit">Отправить заявку</button>
-      </form>
-    </div>
+          </form>
+        </div>
+      </section>
+    </div>    
   </div>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>

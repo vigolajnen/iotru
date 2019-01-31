@@ -4,8 +4,8 @@
   flex-wrap: wrap;
   overflow: hidden;
   background-image: url("../../img/advantages/adv-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
