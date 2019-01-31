@@ -7,11 +7,12 @@
   -moz-transition: top .2s ease-out 0s;
   -o-transition: top .2s ease-out 0s;
   transition: top .2s ease-out 0s;
+
+  background-color: rgb(18, 30, 81);
 }
 
 .fixed-top {
   top: 0;
-  background-color: #121e51;
 }
 
 .fixed-bottom {
