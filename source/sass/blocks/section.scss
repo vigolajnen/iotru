@@ -1,0 +1,38 @@
+.section {
+  position: relative;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+  }
+
+  @media (min-width: $desktop-width-xl) {
+    height: 100vh;
+  }
+}
+
+
+@media (max-width: $mobile-width-only) {
+  .section {
+    transform: none !important;
+    overflow: hidden;
+  }
+
+}
+
+@media (max-width: $desktop-width) {
+  .section {
+    position: relative !important;
+    height: 100%;
+  }
+
+  .onepage-pagination {
+    display: none;
+  }
+
+  .section-scroll.onepage-wrapper {
+    transform: translate3d(0, 0, 0) !important;
+    transition: none !important;
+    overflow-y: scroll;
+  }
+}

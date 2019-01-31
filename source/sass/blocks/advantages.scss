@@ -1,0 +1,144 @@
+.advantages {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-image: url("../../img/advantages/adv-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  &__wrapper {
+    padding: 50px 15px;
+
+    @media (min-width: $tablet-width) {
+      padding: 100px 8%;
+    }
+  }
+
+  &__title {
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 48px;
+    }
+  }
+
+  &__caption {
+    margin-bottom: 74px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 48px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 200px;
+    }
+  }
+
+  &__box-item {
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: 50%;
+    }
+
+    @media (min-width: $desktop-width-xl) {
+      width: 25%;
+    }
+  }
+
+  &__inner {
+    @media (min-width: $tablet-width) {
+      padding: 0 48px;
+    }
+  }
+
+  &__count {
+    line-height: 19px;
+    font-size: 13px;
+    color: #444444;
+  }
+
+  &__name {
+    padding-top: 165px;
+    margin-bottom: 32px;
+    line-height: 27px;
+    font-size: 24px;
+    color: $color-blue-dark;
+
+    &--icon-one,
+    &--icon-two,
+    &--icon-three,
+    &--icon-four {
+      position: relative;
+    }
+
+    &--icon-one::before,
+    &--icon-two::before,
+    &--icon-three::before,
+    &--icon-four::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 120px;
+      height: 120px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &--icon-one::before {
+      background-image: url("../../img/advantages/adv-1.svg");
+    }
+
+    &--icon-two::before {
+      background-image: url("../../img/advantages/adv-2.svg");
+    }
+
+    &--icon-three::before {
+      background-image: url("../../img/advantages/adv-3.svg");
+    }
+
+    &--icon-four::before {
+      background-image: url("../../img/advantages/adv-4.svg");
+    }
+  }
+
+  &__text {
+    line-height: 25px;
+    font-size: 16px;
+    color: $color-text;
+    opacity: 0.8;
+  }
+}
+
+.advantages__nav a {
+  color: $color-text;
+}
+
+.advantages .logo-euro {
+  position: absolute;
+  bottom: 50px;
+  left: 4%;
+  display: block;
+  margin-right: auto;
+  width: 259px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 100px;
+  }
+
+  & img {
+    width: 100%;
+  }
+}

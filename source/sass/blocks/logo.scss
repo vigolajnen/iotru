@@ -1,0 +1,32 @@
+.logo {
+  height: auto;
+  margin: 0 auto;
+
+  & img {
+    width: 80px;
+  }
+}
+
+.logo__link {
+  display: block;
+}
+
+.logo__pic {
+  height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    margin: 0;
+
+    & img {
+      width: 100px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width-xxl) {
+  .logo__pic {
+    width: 100px;
+  }
+}

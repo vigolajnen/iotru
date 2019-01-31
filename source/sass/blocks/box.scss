@@ -1,0 +1,139 @@
+.box {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+    max-width: 600px;
+  }
+
+  &__item {
+    position: relative;
+    background-color: #EFF3F9;
+    min-height: 300px;
+    // height: 100vh;
+
+    &--info {
+      width: 100%;
+      padding: 50px 15px;
+
+      @media (min-width: $tablet-width) {
+        padding: 7% 100px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 55%;
+        // padding: 142px 268px;
+        padding: 7% 10%;
+      }
+    }
+
+    &--pic-one {
+      width: 100%;
+      background-image: url("../../img/organizers/organizers.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media (min-width: $desktop-width) {
+        width: 45%;
+      }
+    }
+
+    &--pic-two {
+      width: 100%;
+      background-image: url("../../img/conditions/conditions.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media (min-width: $desktop-width) {
+        width: 45%;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 60px;
+    text-decoration: none;
+    line-height: normal;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $color-link;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 0;
+      width: 15px;
+      height: 10px;
+      transform: translateY(-50%);
+      background-image: url("../../img/icons/icon-arrow.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__caption {
+    margin-bottom: 20px;
+    line-height: 16px;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $color-title;
+    opacity: 0.4;
+  }
+
+  &__title-h4 {
+    margin: 32px 0 24px;
+    line-height: 27px;
+    font-size: 24px;
+    color: $color-title;
+
+    @include ff('font-size', (480px: 18px, 1900px: 24px));
+  }
+
+  & p {
+    margin: 0 0 32px 0;
+    line-height: 26px;
+    font-size: 18px;
+    color: $color-text;
+    opacity: 0.8;
+
+    @include ff('font-size', (480px: 16px, 1900px: 18px));
+
+    @media (min-width: $tablet-width) {
+      margin: 0 90px 32px 0;
+    }
+  }
+}
+
+.box__item .logo--iot {
+  position: absolute;
+  top: 5%;
+  left: 5.3%;
+  width: 150px;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.box__item .logo--euro {
+  position: absolute;
+  bottom: 5%;
+  left: 5.3%;
+  width: 259px;
+
+  & img {
+    width: 100%;
+  }
+}

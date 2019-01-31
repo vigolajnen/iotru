@@ -1,0 +1,12 @@
+.organizers {
+  position: relative;
+}
+
+.organizers .page-header {
+  position: absolute;
+  z-index: 1;
+}
+
+.organizers .nav {
+  visibility: hidden;
+}

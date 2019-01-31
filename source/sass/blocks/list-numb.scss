@@ -1,0 +1,26 @@
+.list-numb {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 32px;
+  }
+
+  &__count {
+    margin-right: 32px;
+    line-height: 26px;
+    font-size: 18px;
+
+    color: $color-blue;
+  }
+
+  &__text {
+    line-height: 26px;
+    font-size: 18px;
+    color: $color-text;
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,63 @@
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+}
+
+.vp-invisible {
+  // opacity: 0;
+  -webkit-transform: translate3d(0, 15vh, 0);
+  transform: translate3d(0, 15vh, 0);
+  transition: all 1s
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0);
+  visibility: visible !important
+}
+
+@keyframes navBarleft {
+  from {
+    transform: translateX(-100px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes navItemtop {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes itemBlock {
+  from {
+    transform: translateY(100px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.itemBlock {
+  animation-name: itemBlock;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}

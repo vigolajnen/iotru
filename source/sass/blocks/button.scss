@@ -1,0 +1,28 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
+
+.button-order {
+  padding: 20px 50px;
+  line-height: normal;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $color-white;
+
+  text-decoration: none;
+
+  border-radius: 78px;
+  background-color: $color-blue;
+
+  @include ff('font-size', (480px: 12px, 1900px: 14px));
+}
