@@ -48,6 +48,11 @@
     line-height: 25px;
     font-size: 16px;
     color: #60749D;
+
+    &:hover,
+    &:focus {
+      border: 1px solid #5993FF;
+    }
   }
 
   &__button {
@@ -129,7 +134,7 @@
 }
 
 .popup-order__chous:hover {
-border: 1px solid #5993FF;
+  border: 1px solid #5993FF;
   background-position: bottom left;
 }
 
