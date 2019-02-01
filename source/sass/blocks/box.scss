@@ -14,7 +14,7 @@
 
   &__item {
     position: relative;
-    background-color: #EFF3F9;
+    background-color: #eff3f9;
     min-height: 300px;
 
     &--info {
@@ -33,7 +33,7 @@
 
     &--pic-one {
       width: 100%;
-      background-image: url("../../img/organizers/organizers.jpg");
+      background-image: url("../../img/organizers/organizers-1.jpg");
       background-repeat: no-repeat;
       background-size: cover;
 
@@ -44,7 +44,7 @@
 
     &--pic-two {
       width: 100%;
-      background-image: url("../../img/conditions/conditions.jpg");
+      background-image: url("../../img/conditions/conditions-min.jpg");
       background-repeat: no-repeat;
       background-size: cover;
 
@@ -104,7 +104,13 @@
     font-size: 24px;
     color: $color-title;
 
-    @include ff('font-size', (480px: 18px, 1900px: 24px));
+    @include ff(
+      "font-size",
+      (
+        480px: 18px,
+        1900px: 24px
+      )
+    );
   }
 
   & p {
@@ -114,7 +120,13 @@
     color: $color-text;
     opacity: 0.8;
 
-    @include ff('font-size', (480px: 16px, 1900px: 18px));
+    @include ff(
+      "font-size",
+      (
+        480px: 16px,
+        1900px: 18px
+      )
+    );
 
     @media (min-width: $tablet-width) {
       margin: 0 90px 32px 0;

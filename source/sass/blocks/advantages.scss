@@ -15,7 +15,7 @@
     padding: 50px 15px;
 
     @media (min-width: $tablet-width) {
-      padding: 100px 8%;
+      padding: 7% 8%;
     }
   }
 
@@ -98,11 +98,11 @@
     }
 
     &--icon-one::before {
-      background-image: url("../../img/advantages/adv-1.svg");
+      background-image: url("../../img/advantages/advantages-1.svg");
     }
 
     &--icon-two::before {
-      background-image: url("../../img/advantages/adv-2.svg");
+      background-image: url("../../img/advantages/advantages-2.svg");
     }
 
     &--icon-three::before {

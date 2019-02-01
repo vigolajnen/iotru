@@ -48,6 +48,7 @@
     line-height: 25px;
     font-size: 16px;
     color: #60749D;
+    resize: none;
 
     &:hover,
     &:focus {
@@ -115,9 +116,11 @@
   color: #60749D;
   cursor: pointer;
   display: inline-block;
-  // text-align: center;
+  text-align: center;
 
   transition: all 0.18s ease-in-out;
+
+  @include ff('font-size', (480px: 13px, 1900px: 16px));
 
   &::before {
     position: absolute;
@@ -130,6 +133,22 @@
     background-image: url("../img/icons/icon-input-file.svg");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: $mobile-width-x) {
+      left: 13%;
+    }
+
+    @media (min-width: 500px) {
+      left: 25%;
+    }
+
+    @media (min-width: $tablet-width) {
+      left: 25%;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 23%;
+    }
   }
 }
 
